@@ -183,7 +183,7 @@ while True:
             nextion_metin_yazdir("CPU Core 7:" + load_dict["CPU Total"], 7)
             nextion_metin_yazdir("RAM Yuk:" + load_dict["Memory"], 8)
             nextion_metin_yazdir("Disk Yuk:" + load_dict["Used Space"], 9)
-            nextion_metin_yazdir("GPU Yuk:" + power_dict["GPU Total"], 10)
+            nextion_metin_yazdir("", 10)
         elif sayac < sayac_carpim * 3:
             nextion_metin_yazdir("GUC VERISI", 0)
             nextion_metin_yazdir("CPU Core 1:" + power_dict["CPU Core #1"], 1)
@@ -194,6 +194,8 @@ while True:
             nextion_metin_yazdir("CPU Core 6:" + power_dict["CPU Core #6"], 6)
             nextion_metin_yazdir("CPU Total:" + power_dict["CPU Package"], 7)
             nextion_metin_yazdir("GPU:" + power_dict["GPU Total"], 8)
+            nextion_metin_yazdir("", 9)
+            nextion_metin_yazdir("", 10)
         sayac += 1
         if(sayac > toplam_sayfa * sayac_carpim):
             sayac = 0
